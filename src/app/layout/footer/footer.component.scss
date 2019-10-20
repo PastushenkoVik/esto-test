@@ -1,0 +1,16 @@
+@import "../../../styles/utils";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: {
+    size: 13px;
+    weight: 200;
+  }
+
+  @include for-tablet {
+    padding: 30px $container-desctop-padding-lr;
+  }
+}
