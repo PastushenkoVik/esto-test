@@ -17,6 +17,7 @@ import { PlansComponent } from './pages/plans/plans.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { UpdateCookieSettingsComponent } from './pages/update-cookie-settings/update-cookie-settings.component';
 import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-account.component';
+import { ContentSectionComponent } from './shared/content-section/content-section.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-accou
     PrivacyPolicyComponent,
     UpdateCookieSettingsComponent,
     YouBankAccountComponent,
+    ContentSectionComponent,
   ],
   imports: [
     BrowserModule,

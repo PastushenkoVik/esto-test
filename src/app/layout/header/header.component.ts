@@ -34,7 +34,5 @@ export class HeaderComponent implements OnInit {
           ? 'green-mark'
           : undefined),
       }));
-
-    console.log(this.navbarItems);
   }
 }
