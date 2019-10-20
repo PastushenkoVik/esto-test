@@ -1,0 +1,45 @@
+@import '../../../styles/utils';
+
+.header {
+  background-color: rgba(255, 255, 255, 0.98);
+  color: rgb(27, 27, 27);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+
+  @include for-tablet {
+    padding: {
+      left: $container-desctop-padding-lr;
+      right: $container-desctop-padding-lr;
+    };
+  }
+
+  @include for-desktop {
+    margin: {
+      left: 19px;
+      right: 19px;
+    }
+  }
+}
+
+.logo {
+  position: relative;
+  font-size: 18px;
+
+  svg {
+    height: 30px;
+  }
+}
+
+img {
+  margin: 0 16px;
+}
+
+.spacer {
+  flex: 1;
+}

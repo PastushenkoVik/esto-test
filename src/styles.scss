@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/utils";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  color: $body-color;
+  font: {
+    family: Arial, sans-serif;
+    size: 14px;
+    style: normal;
+    weight: normal;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: $body-color;
+  text-decoration: none;
+}
+
+p.empty-page {
+  width: 75vw;
+  position: absolute;
+  left: 50vw;
+  top: 35vh;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  color: darkolivegreen;
+  text-transform: capitalize;
+  font: {
+    weight: 600;
+    size: 70px;
+  }
+}
