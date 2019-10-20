@@ -20,9 +20,18 @@
 .logo {
   position: relative;
   font-size: 18px;
+  margin-top: 4px;
 
   svg {
     height: 30px;
+  }
+
+  &-lang {
+    position: absolute;
+    right: -14px;
+    top: -4px;
+    font-size: 11px;
+    color: rgb(116, 116, 116);
   }
 }
 

@@ -23,3 +23,19 @@
     }
   }
 }
+
+.green-mark {
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    background-color: rgb(54, 161, 139);
+
+  }
+}

@@ -13,14 +13,28 @@ import { navbarRouterItems } from '../../constants';
     }
   `],
 })
+
 export class HeaderComponent implements OnInit {
-  navbarItems: {path: string, label: string} [];
+  navbarItems: {
+    path: string,
+    label: string
+    marked: string,
+  } [];
+
+  markedItems: string [] = [
+    'N26 You',
+  ];
 
   ngOnInit() {
     this.navbarItems = navbarRouterItems
       .map(item => ({
         path: item.path,
         label: item.label,
+        marked: (this.markedItems.find(marckLabel => marckLabel === item.label)
+          ? 'green-mark'
+          : undefined),
       }));
+
+    console.log(this.navbarItems);
   }
 }

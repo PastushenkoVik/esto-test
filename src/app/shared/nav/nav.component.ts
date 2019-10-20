@@ -11,6 +11,6 @@ export class NavComponent {
   @Input() navbarItems: {
     path: string,
     label: string,
-    component: Component,
+    marked: string,
   }[];
 }

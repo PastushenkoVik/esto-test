@@ -12,7 +12,7 @@ export const navbarRouterItems = [
   },
   {
     path: 'you-bank-account',
-    label: 'N26 YouNew',
+    label: 'N26 You',
     component: EmptyPageComponent,
 //    component: YouBankAccountComponent,
   },
