@@ -3,6 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 // import { navbarRouterItems, footerRouterItems } from './constants';
 import { EmptyPageComponent } from './layout/empty-page/empty-page.component';
+import { HomeComponent } from './pages/home/home.component';
+import {BankAccountComponent} from './pages/bank-account/bank-account.component';
+import {YouBankAccountComponent} from './pages/you-bank-account/you-bank-account.component';
+import {MetalComponent} from './pages/metal/metal.component';
+import {BusinessAccountComponent} from './pages/business-account/business-account.component';
+import {PlansComponent} from './pages/plans/plans.component';
+import {LegalDocumentsComponent} from './pages/legal-documents/legal-documents.component';
+import {UpdateCookieSettingsComponent} from './pages/update-cookie-settings/update-cookie-settings.component';
+import {PrivacyPolicyComponent} from './pages/privacy-policy/privacy-policy.component';
+import {ImprintComponent} from './pages/imprint/imprint.component';
 
 
 // const routes: Routes = [
@@ -27,43 +37,43 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: EmptyPageComponent,
+    component: HomeComponent,
   },
   {
     path: 'bank-account',
-    component: EmptyPageComponent,
+    component: BankAccountComponent,
   },
   {
     path: 'you-bank-account',
-    component: EmptyPageComponent,
+    component: YouBankAccountComponent,
   },
   {
     path: 'metal',
-    component: EmptyPageComponent,
+    component: MetalComponent,
   },
   {
     path: 'business-account',
-    component: EmptyPageComponent,
+    component: BusinessAccountComponent,
   },
   {
     path: 'plans',
-    component: EmptyPageComponent,
+    component: PlansComponent,
   },
   {
     path: 'legal-documents',
-    component: EmptyPageComponent,
+    component: LegalDocumentsComponent,
   },
   {
     path: 'update-cookie-settings',
-    component: EmptyPageComponent,
+    component: UpdateCookieSettingsComponent,
   },
   {
     path: 'privacy-policy',
-    component: EmptyPageComponent,
+    component: PrivacyPolicyComponent,
   },
   {
     path: 'imprint',
-    component: EmptyPageComponent,
+    component: ImprintComponent,
   },
 ];
 
