@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plans.component.scss']
 })
 export class PlansComponent implements OnInit {
+  sectionTitle = 'Find a plan that works for you.';
 
   constructor() { }
 
