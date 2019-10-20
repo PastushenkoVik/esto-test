@@ -1,0 +1,25 @@
+@import '../../../styles/utils';
+
+.nav {
+
+  @include for-desktop {
+    margin: {
+      left: 16px;
+      right: 16px;
+    };
+  }
+
+  &-item {
+    outline: none;
+    font-weight: 200;
+    cursor: pointer;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include transition-hover($menu-hover-duration, "color") {
+      color: $menu-hover-color;
+    }
+  }
+}
