@@ -12,18 +12,8 @@
 
   height: 60px;
 
-  @include for-tablet {
-    padding: {
-      left: $container-desctop-padding-lr;
-      right: $container-desctop-padding-lr;
-    };
-  }
-
   @include for-desktop {
-    margin: {
-      left: 19px;
-      right: 19px;
-    }
+    height: 70px;
   }
 }
 

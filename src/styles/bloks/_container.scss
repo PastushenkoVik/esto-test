@@ -1,0 +1,12 @@
+.container {
+  margin: 0;
+  padding: 0 $gutter;
+}
+
+.content {
+  @include for-desktop {
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+    padding: 0 $desctop-content-padding;
+  }
+}

@@ -1,6 +1,10 @@
-$media-desktop: 1024px;
+$media-desktop: 1280px;
 $media-tablet: 768px;
 $media-phone: 320px;
+
+$gutter: 20px;
+$desktop-max-width: 1430px;
+$desctop-content-padding: 40px;
 
 $body-color: #1b1b1b;
 $footer-bc-color: rgb(245, 245, 245);
@@ -10,4 +14,3 @@ $menu-hover-duration: 100ms;
 
 $hover-duration: 300ms;
 
-$container-desctop-padding-lr: 40px

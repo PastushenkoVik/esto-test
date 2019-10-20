@@ -1,4 +1,11 @@
 @import "../../../styles/utils";
+.section-footer {
+  background-color: $footer-bc-color;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .footer {
   display: flex;
@@ -11,6 +18,6 @@
   }
 
   @include for-tablet {
-    padding: 30px $container-desctop-padding-lr;
+    padding: 30px $desctop-content-padding;
   }
 }

@@ -34,7 +34,7 @@ import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-accou
     PlansComponent,
     PrivacyPolicyComponent,
     UpdateCookieSettingsComponent,
-    YouBankAccountComponent
+    YouBankAccountComponent,
   ],
   imports: [
     BrowserModule,
