@@ -122,8 +122,13 @@
               "devServerTarget": "esto-test:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "esto-test"
 }
