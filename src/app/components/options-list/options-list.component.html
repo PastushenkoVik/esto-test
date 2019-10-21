@@ -1,0 +1,14 @@
+<div class="option-wrapper">
+  <div class="cost">
+    <p class="cost-price">
+      €{{listRuler.planCost}}
+    </p>
+    <span>/month</span>
+  </div>
+  <ul class="option-list">
+    <li [ngClass]="{'option-disable': optionItem.isDisable}"
+      *ngFor="let optionItem of optionsArray">
+        <app-option-item [optionItem]="optionItem"></app-option-item>
+    </li>
+  </ul>
+</div>

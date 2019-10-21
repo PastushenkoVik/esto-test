@@ -1,3 +1,10 @@
-<div class="section">
-  <h2 class="section-title">{{sectionTitle}}</h2>
+<div class="container">
+  <div class="content">
+    <div class="section">
+      <h2 *ngIf="section.title;" class="section-title">{{section.title}}</h2>
+    </div>
+    <div class="section">
+      <ng-content></ng-content>
+    </div>
+  </div>
 </div>

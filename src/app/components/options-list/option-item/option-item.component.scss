@@ -1,0 +1,26 @@
+.li-mark {
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: baseline;
+
+  &--check {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    color: rgb(54, 161, 139);
+  }
+
+  &--support,
+  &--access,
+  &--discount,
+  &--insurance,
+  &--withdrawal {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+}

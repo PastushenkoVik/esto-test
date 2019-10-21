@@ -5,15 +5,10 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   margin: 0;
-  height: 100%;
-  position: relative;
   min-height: 100vh;
-}
-
-body {
+  position: relative;
   color: $body-color;
   background-color: #fff;
   font: {

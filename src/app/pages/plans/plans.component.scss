@@ -1,0 +1,6 @@
+.option-lists {
+  max-width: 900px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
