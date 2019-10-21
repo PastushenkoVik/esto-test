@@ -11,6 +11,8 @@ export class NavComponent {
   @Input() navbarItems: {
     path: string,
     label: string,
-    marked: string,
+    isMarked: boolean,
   }[];
+  @Input() isHeader: boolean;
+  @Input() isFooter: boolean;
 }

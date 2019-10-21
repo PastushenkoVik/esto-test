@@ -1,3 +1,14 @@
+import { Routes } from '@angular/router';
+
+import { HomeComponent } from './pages/home/home.component';
+import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-account.component';
+import { MetalComponent } from './pages/metal/metal.component';
+import { BusinessAccountComponent } from './pages/business-account/business-account.component';
+import { PlansComponent } from './pages/plans/plans.component';
+import { LegalDocumentsComponent } from './pages/legal-documents/legal-documents.component';
+import { UpdateCookieSettingsComponent } from './pages/update-cookie-settings/update-cookie-settings.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { ImprintComponent } from './pages/imprint/imprint.component';
 import { EmptyPageComponent } from './layout/empty-page/empty-page.component';
 
 /**
@@ -7,32 +18,27 @@ export const navbarRouterItems = [
   {
     path: 'bank-account',
     label: 'Bank Account',
-    component: EmptyPageComponent,
-//    component: HomeComponent,
+    component: HomeComponent,
   },
   {
     path: 'you-bank-account',
     label: 'N26 You',
-    component: EmptyPageComponent,
-//    component: YouBankAccountComponent,
+    component: YouBankAccountComponent,
   },
   {
     path: 'metal',
     label: 'Metal',
-    component: EmptyPageComponent,
-//    component: MetalComponent,
+    component: MetalComponent,
   },
   {
     path: 'business-account',
     label: 'N26 Business',
-    component: EmptyPageComponent,
-//    component: BusinessAccountComponent,
+    component: BusinessAccountComponent,
   },
   {
     path: 'plans',
     label: 'Compare plans',
-    component: EmptyPageComponent,
-//    component: PlansComponent,
+    component: PlansComponent,
   },
 ];
 
@@ -43,25 +49,32 @@ export const footerRouterItems = [
   {
     path: 'legal-documents',
     label: 'Legal Documents',
-    component: EmptyPageComponent,
-//    component: LegalDocumentsComponent,
+    component: LegalDocumentsComponent,
   },
   {
     path: 'update-cookie-settings',
     label: 'Update cookie settings',
-    component: EmptyPageComponent,
-//    component: UpdateCookieSettingsComponent,
+    component: UpdateCookieSettingsComponent,
   },
   {
     path: 'privacy-policy',
     label: 'Privacy Policy',
-    component: EmptyPageComponent,
-//    component: PrivacyPolicyComponent,
+    component: PrivacyPolicyComponent,
   },
   {
     path: 'imprint',
     label: 'Imprint',
-    component: EmptyPageComponent,
-//    component: ImprintComponent,
+    component: ImprintComponent,
   },
 ];
+
+export const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: EmptyPageComponent,
+  },
+  ...navbarRouterItems,
+  ...footerRouterItems,
+];
+
