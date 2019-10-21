@@ -21,8 +21,20 @@
     @include transition-hover($menu-hover-duration, "color") {
       color: $menu-hover-color;
     }
+
+    &--header {
+      font-size: 16px;
+      margin: 0 23px 0 5px;
+    }
+
+    &--footer {
+      font-size: 13px;
+      margin: 0 0 0 14px;
+    }
   }
 }
+
+
 
 .green-mark {
   position: relative;

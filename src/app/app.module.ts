@@ -18,6 +18,8 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { UpdateCookieSettingsComponent } from './pages/update-cookie-settings/update-cookie-settings.component';
 import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-account.component';
 import { ContentSectionComponent } from './shared/content-section/content-section.component';
+import { OptionsListComponent } from './components/options-list/options-list.component';
+import { OptionItemComponent } from './components/options-list/option-item/option-item.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { ContentSectionComponent } from './shared/content-section/content-sectio
     UpdateCookieSettingsComponent,
     YouBankAccountComponent,
     ContentSectionComponent,
+    OptionsListComponent,
+    OptionItemComponent,
   ],
   imports: [
     BrowserModule,

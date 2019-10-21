@@ -1,8 +1,14 @@
 <nav class="nav">
-  <span class="nav-item {{navItem.marked}}"
-        *ngFor="let navItem of navbarItems"
-        [routerLink]="navItem.path"
-        [routerLinkActive]="navActive"
+  <span
+    class="nav-item"
+    [ngClass]="{
+      'nav-item--header': isHeader,
+      'nav-item--footer': isFooter,
+      'green-mark': navItem.isMarked
+    }"
+    *ngFor="let navItem of navbarItems"
+      [routerLink]="navItem.path"
+      [routerLinkActive]="navActive"
   >
     {{navItem.label}}
   </span>

@@ -1,0 +1,53 @@
+@import "../../../styles/utils";
+
+.option-wrapper {
+  padding: 30px;
+  box-shadow: 0 20px 55px -37px $shadow-default;
+
+  @include transition-hover($hover-duration, "box-shadow") {
+    box-shadow: 0 35px 55px -25px $shadow-default;
+  }
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &-price {
+    display: inline-block;
+    font: {
+      size: 40px;
+      weight: 600;
+    }
+  }
+
+  span {
+    color: rgb(230, 230, 230);
+    font-size:18px;
+    position:relative;
+  }
+}
+
+.option-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    font-size: 15px;
+    display:list-item;
+    line-height:26px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-bottom:16px;
+    padding-left:40px;
+    position:relative;
+    text-align:left;
+    text-size-adjust:100%;
+  }
+}
+
+.option-disable {
+  opacity: 0.2;
+}

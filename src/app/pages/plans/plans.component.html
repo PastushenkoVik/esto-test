@@ -1,7 +1,14 @@
 <section class="section--gray">
-  <div class="container">
-    <div class="content">
-      <app-content-section [sectionTitle]="sectionTitle"></app-content-section>
+  <app-content-section [section]="sections[0]">
+  </app-content-section>
+</section>
+
+<section>
+  <app-content-section [section]="sections[1]">
+    <div class="option-lists">
+      <div *ngFor="let listRuler of optionsListRules" >
+        <app-options-list [listRuler]="listRuler"></app-options-list>
+      </div>
     </div>
-  </div>
+  </app-content-section>
 </section>
