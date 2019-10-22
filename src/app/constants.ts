@@ -10,6 +10,7 @@ import { UpdateCookieSettingsComponent } from './pages/update-cookie-settings/up
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
 import { EmptyPageComponent } from './layout/empty-page/empty-page.component';
+import {AccountComponent} from './pages/account/account.component';
 
 /**
  * Header menu
@@ -68,6 +69,14 @@ export const footerRouterItems = [
   },
 ];
 
+export const buttonRedirect = {
+  openAccount: {
+    label: 'Open account',
+    path: 'account/:title',
+    component: AccountComponent,
+  }
+};
+
 export const routes: Routes = [
   {
     path: '',
@@ -76,5 +85,6 @@ export const routes: Routes = [
   },
   ...navbarRouterItems,
   ...footerRouterItems,
+  buttonRedirect.openAccount,
 ];
 

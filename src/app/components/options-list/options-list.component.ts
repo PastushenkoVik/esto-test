@@ -48,8 +48,11 @@ export class OptionsListComponent implements OnInit {
   ];
 
   optionsArray: IOptionListItem[];
+  price: string;
 
   ngOnInit(): void {
+    this.price = this.listRuler.planCost.toFixed(2);
+
     this.optionsArray = this.optionsList.map(opList => ({
       ...opList,
       isDisable: this.listRuler.isOptionDisable
