@@ -23,6 +23,7 @@ import { OptionItemComponent } from './components/options-list/option-item/optio
 import { ButtonComponent } from './components/button/button.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardsSelectComponent } from './components/cards-select/cards-select.component';
+import { CardsSliderComponent } from './cards-select/cards-slider/cards-slider.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { CardsSelectComponent } from './components/cards-select/cards-select.com
     ButtonComponent,
     AccountComponent,
     CardsSelectComponent,
+    CardsSliderComponent,
   ],
   imports: [
     BrowserModule,

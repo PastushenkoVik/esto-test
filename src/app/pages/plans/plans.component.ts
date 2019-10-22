@@ -8,12 +8,47 @@ import { buttonRedirect } from '../../constants';
   styleUrls: ['./plans.component.scss']
 })
 export class PlansComponent implements OnInit {
-  buttonOpenAccount = {
-    text: 'Open Account',
-    pathN26: '/account/N26',
-    pathN26You: '/account/N26You',
-    pathN26Metal: '/account/N26Metal',
-  };
+  plans = [
+    {
+      title: 'N26',
+      button: {
+        text: 'Open Account',
+        path: '/account/N26',
+      },
+      cardSlider: [
+        {
+          img: '../assets/images/n26-cards-mastercard-uk.png',
+          alt: 'Transparent N26 Standard card',
+        },
+      ],
+    },
+    {
+      title: 'N26 You',
+      button: {
+        text: 'Open Account',
+        path: '/account/N26You',
+      },
+      cardSlider: [
+        {
+          img: 'assets/images/n26-cards-mastercard-uk.png',
+          alt: 'Transparent N26 Standard card',
+        },
+      ],
+    },
+    {
+      title: 'N26 Metal',
+      button: {
+        text: 'Open Account',
+        path: '/account/N26Metal',
+      },
+      cardSlider: [
+        {
+          img: 'assets/images/n26-cards-mastercard-uk.png',
+          alt: 'Transparent N26 Standard card',
+        },
+      ],
+    },
+  ];
 
   sections: IContentSection [] = [
     {
