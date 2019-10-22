@@ -6,11 +6,11 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./cards-slider.component.scss']
 })
 export class CardsSliderComponent implements OnInit {
-  @Input() cardSlider;
-
-  constructor() { }
+  @Input() cardSlider ;
 
   ngOnInit() {
+    this.cardSlider.activeDot = 0;
   }
 
+  handlerDotSelect = (newActiveDot) => this.cardSlider.activeDot = newActiveDot;
 }

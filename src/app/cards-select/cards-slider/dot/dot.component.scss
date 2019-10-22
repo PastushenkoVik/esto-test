@@ -1,0 +1,36 @@
+.dot {
+  cursor:pointer;
+  position:relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+
+  background-color:rgb(38, 102, 120);
+  border: none;
+
+  &:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image:linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  }
+
+  &:focus {
+    box-shadow: rgba(54, 161, 139, 0.6) 0 0 0 3px;
+    outline: none;
+  }
+
+  &--selected {
+    box-shadow: rgb(255, 255, 255) 0 0 0 3px, rgba(0, 0, 0, 0.4) 0 4px 10px 0;
+  }
+
+  &--disabled {
+    cursor: unset;
+    background-color: rgb(178, 178, 180) !important;
+  }
+}

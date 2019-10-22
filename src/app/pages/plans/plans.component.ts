@@ -19,6 +19,8 @@ export class PlansComponent implements OnInit {
         {
           img: './assets/n26-cards-mastercard-uk.png',
           alt: 'Transparent N26 Standard card',
+          isDisabled: true,
+          dotColor: {'background-color': 'rgb(38, 102, 120)'},
         },
       ],
     },
@@ -26,28 +28,33 @@ export class PlansComponent implements OnInit {
       title: 'N26 You',
       button: {
         text: 'Open Account',
-        path: './account/N26You',
+        path: '/account/N26You',
       },
       cardSlider: [
         {
           img: './assets/n26-cards-mastercard-petrol-de.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(38, 102, 120)'},
         },
         {
           img: './assets/n26-cards-mastercard-wheat-de.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(205, 163, 95)'},
         },
         {
           img: './assets/n26-cards-mastercard-rhubarb-de.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(203, 124, 122)'},
         },
         {
           img: './assets/n26-cards-mastercard-teal-de.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(54, 161, 139)'},
         },
         {
           img: './assets/n26-cards-mastercard-raven-de.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(116, 116, 116)'},
         },
       ],
     },
@@ -61,14 +68,17 @@ export class PlansComponent implements OnInit {
         {
           img: './assets/n26-cards-mastercard-metal-charcoalblack.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(56, 56, 55)'},
         },
         {
           img: './assets/n26-cards-mastercard-metal-quartzrose.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(232, 180, 160)'},
         },
         {
           img: './assets/n26-cards-mastercard-metal-slategrey.png',
           alt: 'Transparent N26 Standard card',
+          dotColor: {'background-color': 'rgb(138, 138, 140)'},
         },
       ],
     },
