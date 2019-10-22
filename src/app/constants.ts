@@ -74,7 +74,12 @@ export const buttonRedirect = {
     label: 'Open account',
     path: 'account/:title',
     component: AccountComponent,
-  }
+  },
+  businessPlans: {
+    label: 'Personal',
+    path: 'plans-business',
+    component: BusinessAccountComponent,
+  },
 };
 
 export const routes: Routes = [
@@ -86,5 +91,6 @@ export const routes: Routes = [
   ...navbarRouterItems,
   ...footerRouterItems,
   buttonRedirect.openAccount,
+  buttonRedirect.businessPlans,
 ];
 

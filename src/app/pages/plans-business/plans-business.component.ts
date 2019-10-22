@@ -1,18 +1,18 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfaces';
 
 @Component({
-  selector: 'app-plans',
-  templateUrl: './plans.component.html',
-  styleUrls: ['./plans.component.scss']
+  selector: 'app-plans-business',
+  templateUrl: './plans-business.component.html',
+  styleUrls: ['./plans-business.component.scss']
 })
-export class PlansComponent implements OnInit {
+export class PlansBusinessComponent {
   plans = [
     {
-      title: 'N26',
+      title: 'N26 Business',
       button: {
         text: 'Open Account',
-        path: '/account/N26',
+        path: '/account/N26 Business',
       },
       cardSlider: [
         {
@@ -24,10 +24,10 @@ export class PlansComponent implements OnInit {
       ],
     },
     {
-      title: 'N26 You',
+      title: 'N26 Business You',
       button: {
         text: 'Open Account',
-        path: '/account/N26 You',
+        path: '/account/N26 Business You',
       },
       cardSlider: [
         {
@@ -57,31 +57,8 @@ export class PlansComponent implements OnInit {
         },
       ],
     },
-    {
-      title: 'N26 Metal',
-      button: {
-        text: 'Open Account',
-        path: '/account/N26 Metal',
-      },
-      cardSlider: [
-        {
-          img: './assets/n26-cards-mastercard-metal-charcoalblack.png',
-          alt: 'Transparent N26 Standard card',
-          dotColor: {'background-color': 'rgb(56, 56, 55)'},
-        },
-        {
-          img: './assets/n26-cards-mastercard-metal-quartzrose.png',
-          alt: 'Transparent N26 Standard card',
-          dotColor: {'background-color': 'rgb(232, 180, 160)'},
-        },
-        {
-          img: './assets/n26-cards-mastercard-metal-slategrey.png',
-          alt: 'Transparent N26 Standard card',
-          dotColor: {'background-color': 'rgb(138, 138, 140)'},
-        },
-      ],
-    },
   ];
+
   optionsList: IOptionListItem [] = [
     {
       isDisable: false,
@@ -152,7 +129,4 @@ export class PlansComponent implements OnInit {
       isOptionDisable: [],
     },
   ];
-
-  ngOnInit(): void {
-  }
 }
