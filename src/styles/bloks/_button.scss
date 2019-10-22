@@ -1,0 +1,18 @@
+.button-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(54, 161, 139);
+  border: 2px solid rgb(54, 161, 139);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  padding: 0 16px;
+  transition-duration: 0.25s;
+
+  &:focus {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(54, 161, 139, 0.6)
+  }
+}
