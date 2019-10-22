@@ -1,0 +1,14 @@
+.tabs-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-item {
+  outline: none;
+  cursor:pointer;
+  font-size:18px;
+  line-height:32px;
+  margin: 0 20px;
+}

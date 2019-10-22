@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfaces';
+import { Component, OnInit } from '@angular/core';
+import { IContentSection, IOptionListItem, IOptionsListRuler } from '../../interfaces';
+import {PlansBusinessComponent} from '../plans-business/plans-business.component';
 
 @Component({
   selector: 'app-plans',
@@ -7,6 +8,17 @@ import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfa
   styleUrls: ['./plans.component.scss']
 })
 export class PlansComponent implements OnInit {
+  tabsAccountPlans = [
+    {
+      label: 'Personal',
+      path: '/plans',
+    },
+    {
+      label: 'Business',
+      path: '/plans-business',
+    },
+  ];
+
   plans = [
     {
       title: 'N26',

@@ -1,9 +1,12 @@
 <section class="section--gray">
   <app-content-section [section]="sections[0]">
-    <app-cards-select
-      *ngFor="let cardSelect of plans"
-      [cardSelect]="cardSelect"
-    ></app-cards-select>
+    <app-tabs-link [tabsAccountPlans]="tabsList"></app-tabs-link>
+    <div class="flex-wrapper">
+      <app-cards-select
+        *ngFor="let cardSelect of plans"
+        [cardSelect]="cardSelect"
+      ></app-cards-select>
+    </div>
   </app-content-section>
 </section>
 

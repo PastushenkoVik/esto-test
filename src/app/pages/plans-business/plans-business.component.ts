@@ -6,7 +6,19 @@ import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfa
   templateUrl: './plans-business.component.html',
   styleUrls: ['./plans-business.component.scss']
 })
+
 export class PlansBusinessComponent {
+  tabsList = [
+    {
+      label: 'Personal',
+      path: '/plans',
+    },
+    {
+      label: 'Business',
+      path: '/plans-business',
+    },
+  ];
+
   plans = [
     {
       title: 'N26 Business',

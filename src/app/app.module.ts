@@ -26,6 +26,8 @@ import { CardsSelectComponent } from './components/cards-select/cards-select.com
 import { CardsSliderComponent } from './components/cards-select/cards-slider/cards-slider.component';
 import { DotComponent } from './components/cards-select/cards-slider/dot/dot.component';
 import { PlansBusinessComponent } from './pages/plans-business/plans-business.component';
+import { TabsLinkComponent } from './components/tabs-link/tabs-link.component';
+import { TabComponent } from './components/tabs-link/tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { PlansBusinessComponent } from './pages/plans-business/plans-business.co
     CardsSliderComponent,
     DotComponent,
     PlansBusinessComponent,
+    TabsLinkComponent,
+    TabComponent,
   ],
   imports: [
     BrowserModule,

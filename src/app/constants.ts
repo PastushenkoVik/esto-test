@@ -9,8 +9,8 @@ import { LegalDocumentsComponent } from './pages/legal-documents/legal-documents
 import { UpdateCookieSettingsComponent } from './pages/update-cookie-settings/update-cookie-settings.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { ImprintComponent } from './pages/imprint/imprint.component';
-import { EmptyPageComponent } from './layout/empty-page/empty-page.component';
-import {AccountComponent} from './pages/account/account.component';
+import { AccountComponent } from './pages/account/account.component';
+import { PlansBusinessComponent } from './pages/plans-business/plans-business.component';
 
 /**
  * Header menu
@@ -76,9 +76,9 @@ export const buttonRedirect = {
     component: AccountComponent,
   },
   businessPlans: {
-    label: 'Personal',
+    label: 'Business',
     path: 'plans-business',
-    component: BusinessAccountComponent,
+    component: PlansBusinessComponent,
   },
 };
 
@@ -92,5 +92,16 @@ export const routes: Routes = [
   ...footerRouterItems,
   buttonRedirect.openAccount,
   buttonRedirect.businessPlans,
+];
+
+export const tabsAccountPlans = [
+  {
+    label: 'Personal',
+    path: '/plans',
+  },
+  {
+    label: 'Business',
+    path: '/plans-business',
+  },
 ];
 
