@@ -1,0 +1,8 @@
+<span
+  class="tab-item"
+  *ngFor="let tabItem of tabsAccountPlans"
+    [routerLink]="tabItem.path"
+    [routerLinkActive]="tabActive"
+>
+  {{tabItem.label}}
+</span>

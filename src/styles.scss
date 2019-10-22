@@ -7,7 +7,6 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
   position: relative;
   color: $body-color;
   background-color: #fff;
@@ -19,6 +18,12 @@ body {
   }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  dispLay: block;
+  min-height: 100vh;
+  padding-bottom: 90px;
 }
 
 h1,
@@ -53,4 +58,10 @@ p.empty-page {
     weight: 600;
     size: 70px;
   }
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

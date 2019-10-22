@@ -23,8 +23,11 @@ import { OptionItemComponent } from './components/options-list/option-item/optio
 import { ButtonComponent } from './components/button/button.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardsSelectComponent } from './components/cards-select/cards-select.component';
-import { CardsSliderComponent } from './cards-select/cards-slider/cards-slider.component';
-import { DotComponent } from './cards-select/cards-slider/dot/dot.component';
+import { CardsSliderComponent } from './components/cards-select/cards-slider/cards-slider.component';
+import { DotComponent } from './components/cards-select/cards-slider/dot/dot.component';
+import { PlansBusinessComponent } from './pages/plans-business/plans-business.component';
+import { TabsLinkComponent } from './components/tabs-link/tabs-link.component';
+import { TabComponent } from './components/tabs-link/tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,9 @@ import { DotComponent } from './cards-select/cards-slider/dot/dot.component';
     CardsSelectComponent,
     CardsSliderComponent,
     DotComponent,
+    PlansBusinessComponent,
+    TabsLinkComponent,
+    TabComponent,
   ],
   imports: [
     BrowserModule,
