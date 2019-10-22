@@ -1,3 +1,5 @@
+@import "../../../styles/utils";
+
 .slider {
   &-wrapper {
     margin-bottom: 20px;
@@ -8,6 +10,7 @@
   }
 
   &-shadow {
+    position: relative;
     display: flex;
     overflow: hidden;
     border-radius: 4px;
@@ -20,9 +23,17 @@
     align-items: center;
     margin-top:20px;
   }
-}
 
-.item-img {
-  width: 100%;
+  &-img {
+    width: 100%;
+    left: 100%;
+    @include transition($hover-duration, 'left');
+
+    &--visible {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
 }
 

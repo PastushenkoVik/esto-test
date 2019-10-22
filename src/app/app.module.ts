@@ -24,6 +24,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardsSelectComponent } from './components/cards-select/cards-select.component';
 import { CardsSliderComponent } from './cards-select/cards-slider/cards-slider.component';
+import { DotComponent } from './cards-select/cards-slider/dot/dot.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CardsSliderComponent } from './cards-select/cards-slider/cards-slider.c
     AccountComponent,
     CardsSelectComponent,
     CardsSliderComponent,
+    DotComponent,
   ],
   imports: [
     BrowserModule,

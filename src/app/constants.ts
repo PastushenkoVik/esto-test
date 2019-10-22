@@ -81,7 +81,7 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: EmptyPageComponent,
+    component: PlansComponent,
   },
   ...navbarRouterItems,
   ...footerRouterItems,

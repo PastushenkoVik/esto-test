@@ -1,0 +1,11 @@
+<button
+  (click)="dotSelect()"
+  class="dot"
+  [ngStyle]="dot.dotColor"
+  [ngClass]="{
+    'dot--disabled': dot.isDisabled,
+    'dot--selected': !dot.isDisabled && (i === activeDot)
+    }"
+  [attr.disabled]="dot.isDisabled ? true : null"
+></button>
+
