@@ -17,7 +17,7 @@ export class PlansComponent implements OnInit {
       },
       cardSlider: [
         {
-          img: '../assets/images/n26-cards-mastercard-uk.png',
+          img: './assets/n26-cards-mastercard-uk.png',
           alt: 'Transparent N26 Standard card',
         },
       ],
@@ -26,11 +26,11 @@ export class PlansComponent implements OnInit {
       title: 'N26 You',
       button: {
         text: 'Open Account',
-        path: '/account/N26You',
+        path: './account/N26You',
       },
       cardSlider: [
         {
-          img: 'assets/images/n26-cards-mastercard-uk.png',
+          img: './assets/n26-cards-mastercard-petrol-de.png',
           alt: 'Transparent N26 Standard card',
         },
       ],
@@ -43,7 +43,7 @@ export class PlansComponent implements OnInit {
       },
       cardSlider: [
         {
-          img: 'assets/images/n26-cards-mastercard-uk.png',
+          img: './assets/n26-cards-mastercard-metal-charcoalblack.png',
           alt: 'Transparent N26 Standard card',
         },
       ],

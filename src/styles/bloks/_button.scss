@@ -1,7 +1,4 @@
 .button-green {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   background-color: rgb(54, 161, 139);
   border: 2px solid rgb(54, 161, 139);
@@ -9,7 +6,7 @@
   cursor: pointer;
   font-size: 14px;
   height: 40px;
-  padding: 0 16px;
+  padding: 8px 16px;
   transition-duration: 0.25s;
 
   &:focus {
