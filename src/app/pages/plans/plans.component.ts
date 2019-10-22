@@ -33,6 +33,22 @@ export class PlansComponent implements OnInit {
           img: './assets/n26-cards-mastercard-petrol-de.png',
           alt: 'Transparent N26 Standard card',
         },
+        {
+          img: './assets/n26-cards-mastercard-wheat-de.png',
+          alt: 'Transparent N26 Standard card',
+        },
+        {
+          img: './assets/n26-cards-mastercard-rhubarb-de.png',
+          alt: 'Transparent N26 Standard card',
+        },
+        {
+          img: './assets/n26-cards-mastercard-teal-de.png',
+          alt: 'Transparent N26 Standard card',
+        },
+        {
+          img: './assets/n26-cards-mastercard-raven-de.png',
+          alt: 'Transparent N26 Standard card',
+        },
       ],
     },
     {
@@ -44,6 +60,14 @@ export class PlansComponent implements OnInit {
       cardSlider: [
         {
           img: './assets/n26-cards-mastercard-metal-charcoalblack.png',
+          alt: 'Transparent N26 Standard card',
+        },
+        {
+          img: './assets/n26-cards-mastercard-metal-quartzrose.png',
+          alt: 'Transparent N26 Standard card',
+        },
+        {
+          img: './assets/n26-cards-mastercard-metal-slategrey.png',
           alt: 'Transparent N26 Standard card',
         },
       ],

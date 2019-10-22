@@ -1,12 +1,28 @@
-.slider-wrapper {
-  margin-bottom: 20px;
-}
+.slider {
+  &-wrapper {
+    margin-bottom: 20px;
+  }
+  &-viewer {
+    width: 100%;
+    padding-bottom: 10px;
+  }
 
-.slider-viewer {
-  width: 100%;
-  overflow: hidden;
+  &-shadow {
+    display: flex;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: rgb(116, 116, 116) 0px 45px 65px -40px;
+  }
+
+  &-dotter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+  }
 }
 
 .item-img {
   width: 100%;
 }
+

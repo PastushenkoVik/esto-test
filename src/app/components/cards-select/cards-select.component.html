@@ -1,8 +1,10 @@
 <div class="cards-wrapper">
   <h2 class="cards-title">{{cardSelect.title}}</h2>
   <app-cards-slider [cardSlider]="cardSelect.cardSlider"></app-cards-slider>
+  <div>
   <app-button
     [text]="cardSelect.button.text"
     [path]="cardSelect.button.path"
   ></app-button>
+  </div>
 </div>
