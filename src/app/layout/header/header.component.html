@@ -13,17 +13,14 @@
 
       <div class="spacer"></div>
 
-      <div class="header-desctop">
-        <app-nav
-          [navbarItems]="navbarItems"
-          [isHeader]="isHeader"
-        ></app-nav>
+      <app-nav class="header-desktop"
+        [navbarItems]="navbarItems"
+        [isHeader]="isHeader"
+      ></app-nav>
 
-        <app-buttons-block
-          [ngClass]="{'buttons-scroll': isButtonsScroll}"
-          class="buttons"
-        ></app-buttons-block>
-      </div>
+      <app-buttons-block class="buttons header-desktop"
+        [ngClass]="{'buttons-scroll': isButtonsScroll}"
+      ></app-buttons-block>
 
       <div class="header-mobile">
         <div class="menu-switch">
