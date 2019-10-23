@@ -2,6 +2,7 @@
 .section-footer {
   background-color: $footer-bc-color;
   width: 100%;
+
   position: absolute;
   left: 0;
   bottom: 0;
@@ -12,6 +13,12 @@
   justify-content: space-between;
   align-items: center;
 
+  flex-wrap: wrap;
+
+  @include for-tablet {
+    flex-wrap: nowrap;
+  }
+  padding: $gutter 0;
   font: {
     size: 13px;
     weight: 200;

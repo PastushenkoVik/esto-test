@@ -3,7 +3,9 @@
 .cards {
   &-wrapper {
     background-color: $section-bc-gray;
+    width: 100vw;
     @include for-tablet {
+      width: unset;
       background-color: transparent;
     }
 
@@ -33,7 +35,7 @@
   @include for-tablet {
     display: block;
     height: 450px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;

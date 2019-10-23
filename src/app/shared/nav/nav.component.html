@@ -1,4 +1,10 @@
-<nav class="nav">
+<nav
+  class="nav"
+  [ngClass]="{
+      'nav-header': isHeader,
+      'nav-footer': isFooter
+    }"
+>
   <span
     class="nav-item"
     [ngClass]="{
