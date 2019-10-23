@@ -1,20 +1,26 @@
 @import '../../../styles/utils';
 
 .header {
+  padding: 0 $desctop-header-padding;
   background-color: rgba(255, 255, 255, 0.98);
-  color: rgb(27, 27, 27);
-  position: sticky;
-  top: 0;
   z-index: 9999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 
-  height: 60px;
 
-  @include for-desktop {
-    height: 70px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+
+    height: 60px;
+    @include for-desktop {
+      height: 70px;
+    }
   }
 }
 
@@ -42,4 +48,18 @@ img {
 
 .spacer {
   flex: 1;
+}
+
+.buttons {
+  align-self: flex-start;
+  height: 200%;
+  position: relative;
+  left: 0;
+  top: 0;
+
+  @include transition(500ms, 'top');
+
+  &-scroll {
+    top: -100%;
+  }
 }
