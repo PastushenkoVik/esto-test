@@ -23,6 +23,6 @@ export class ButtonsBlockComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isButtonsScroll = window.pageYOffset > 150;
+    this.isButtonsScroll = window.pageYOffset > 250;
   }
 }

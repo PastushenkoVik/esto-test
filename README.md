@@ -1,6 +1,6 @@
 # Frontend developer sample test
 
-[DEMO LINK](https://pastushenkovik.github.io/esto-test/docs)
+[DEMO LINK](https://pastushenkovik.github.io/esto-test/plans/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.10.
 

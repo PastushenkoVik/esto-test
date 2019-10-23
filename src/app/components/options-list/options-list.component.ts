@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IOptionListItem, IOptionsListRuler } from '../../interfaces';
+import { IOptionListItem } from '../../interfaces';
 
 @Component({
   selector: 'app-options-list',
@@ -7,18 +7,21 @@ import { IOptionListItem, IOptionsListRuler } from '../../interfaces';
   styleUrls: ['./options-list.component.scss']
 })
 export class OptionsListComponent implements OnInit {
-  @Input() listRuler: IOptionsListRuler;
-  @Input() optionsList: IOptionListItem [];
+  @Input() optionsListRulers;
+  @Input() optionsList;
 
   optionsArray: IOptionListItem[];
   price: string;
 
+
   ngOnInit(): void {
-    this.price = this.listRuler.planCost.toFixed(2);
+    console.log(this.optionsListRulers);
+
+    this.price = this.optionsListRulers.planCost.toFixed(2);
 
     this.optionsArray = this.optionsList.map(opList => ({
       ...opList,
-      isDisable: this.listRuler.isOptionDisable
+      isDisable: this.optionsListRulers.isOptionDisable
         .reduce((flag, rule) => flag || opList.hasOwnProperty(rule), false),
     }));
   }
