@@ -1,0 +1,7 @@
+@import "../styles/utils";
+
+@include for-phone {
+  .section-footer {
+    margin-top: 30px;
+  }
+}

@@ -9,6 +9,17 @@
     };
   }
 
+  &-header {
+
+  }
+
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
   &-item {
     outline: none;
     font-weight: 200;
@@ -31,7 +42,7 @@
 
     &--footer {
       font-size: 13px;
-      margin: 0 0 0 14px;
+      margin: 10px 0 10px 0;
     }
   }
 }
