@@ -1,13 +1,13 @@
 <section class="section--gray">
   <app-content-section [section]="sections[0]">
-    <app-tabs-link [tabsAccountPlans]="tabsAccountPlans"></app-tabs-link>
+    <app-tabs-link class="tabs" [tabsAccountPlans]="tabsAccountPlans"></app-tabs-link>
   </app-content-section>
 </section>
 
 <section class="section--content">
   <app-content-section [section]="sections[1]">
     <div class="flex-wrapper">
-      <app-cards-select
+      <app-cards-select class="mobile-wrapper"
         *ngFor="let cardSelect of plans"
           [cardSelect]="cardSelect"
       >

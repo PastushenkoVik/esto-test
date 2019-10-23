@@ -11,15 +11,13 @@ export class CardsSliderComponent implements OnInit {
   shiftClass = {};
 
   ngOnInit() {
-    console.log(this.cardSlider);
     this.cardSlider.activeDot = 0;
   }
 
   handlerDotSelect = (newActiveDot) => {
     this.cardSlider.activeDot = newActiveDot;
-    const shiftStep = 100 * newActiveDot;
     this.shiftClass = {
-      transform: `translateX(-${shiftStep}%)`
+      transform: `translateX(-${100 * newActiveDot}%)`
     };
   }
 }
