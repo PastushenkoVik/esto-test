@@ -1,16 +1,45 @@
-.button-green {
+@import "../utils";
+
+.button {
   display: inline-block;
-  color: #fff;
-  background-color: rgb(54, 161, 139);
-  border: 2px solid rgb(54, 161, 139);
-  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   padding: 8px 16px;
-  transition-duration: 0.25s;
   white-space: nowrap;
+  @include transition($hover-duration, 'all');
 
-  &:focus {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(54, 161, 139, 0.6)
+  .svg {
+    display: none;
+  }
+
+  &-green {
+    color: #fff;
+    background-color: rgb(54, 161, 139);
+    border: 2px solid rgb(54, 161, 139);
+    border-radius: 8px;
+
+    &:focus {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(54, 161, 139, 0.6)
+    }
+  }
+
+  &-white {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .svg {
+      display: inline-block;
+      color:rgb(27, 27, 27);
+      fill:rgb(27, 27, 27);
+      height: 18px;
+      width:18px;
+      margin-left:14px;
+      overflow-x:hidden;
+      overflow-y:hidden;
+    }
   }
 }

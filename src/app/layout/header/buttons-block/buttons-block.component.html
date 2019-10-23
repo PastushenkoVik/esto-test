@@ -3,12 +3,15 @@
     <app-button [ngClass]="{'button-scroll': isButtonsScroll}"
       [text]="buttonsList[0].label"
       [path]="buttonsList[0].path"
+      [buttonType]="buttonsList[0].buttonType"
+
     ></app-button>
   </div>
   <div class="button-wrapper">
     <app-button [ngClass]="{'button-scroll': !isButtonsScroll}"
       [text]="buttonsList[1].label"
       [path]="buttonsList[1].path"
+      [buttonType]="buttonsList[1].buttonType"
     ></app-button>
   </div>
 </div>

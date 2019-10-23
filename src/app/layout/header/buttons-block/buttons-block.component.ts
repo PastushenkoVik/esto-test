@@ -12,10 +12,12 @@ export class ButtonsBlockComponent {
     {
       label: 'Online Bankibg',
       path: '/account',
+      buttonType: {isButtonWhite: true},
     },
     {
       label: 'Open account',
       path: '/account',
+      buttonType: {isButtonGreen: true},
     }
   ];
 
