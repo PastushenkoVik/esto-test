@@ -80,32 +80,17 @@ export class PlansBusinessComponent {
     {
       isDisable: false,
       typeCheck: true,
-      text: 'Free payments in any currency',
+      text: '0.1% cashback',
     },
     {
       isDisable: false,
       typeWithdrawal: true,
-      text: 'Free withdrawals worldwide',
+      text: 'No ATM fees in any currency',
     },
     {
       isDisable: false,
       typeInsurance: true,
       text: 'Allianz insurance package',
-    },
-    {
-      isDisable: false,
-      typeDiscount: true,
-      text: 'Selected discounts and offers from partner brands',
-    },
-    {
-      isDisable: false,
-      typeAccess: true,
-      text: 'Exclusive access to unique Metal Experiences',
-    },
-    {
-      isDisable: false,
-      typeSupport: true,
-      text: 'Dedicated Customer Support',
     },
   ];
 
@@ -135,10 +120,6 @@ export class PlansBusinessComponent {
         'typeAccess',
         'typeSupport',
       ],
-    },
-    {
-      planCost: 16.90,
-      isOptionDisable: [],
     },
   ];
 }
