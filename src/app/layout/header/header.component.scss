@@ -27,19 +27,8 @@
     max-width: $desktop-max-width;
     margin: 0 auto;
   }
-
-
-  @include for-phone {
-    .header-desctop {
-      display: none;
-    }
-  }
-  @include for-desktop {
-    .header-mobile {
-      display: none;
-    }
-  }
 }
+
 
 .logo {
   position: relative;
@@ -84,10 +73,21 @@ img {
 }
 
 .menu-switch {
-
-  svg {
-    rect {
-      fill: $body-color;
-    }
+  rect {
+    fill: $body-color;
   }
 }
+
+.header-desktop {
+  display: none;
+}
+
+@include for-tablet {
+  .header-mobile {
+    display: none;
+  }
+  .header-desktop {
+    display: block;
+  }
+}
+
