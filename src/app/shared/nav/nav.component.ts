@@ -15,4 +15,5 @@ export class NavComponent {
   }[];
   @Input() isHeader: boolean;
   @Input() isFooter: boolean;
+  @Input() isMobile: boolean;
 }

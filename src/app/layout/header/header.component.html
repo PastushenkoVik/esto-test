@@ -16,6 +16,7 @@
       <app-nav class="header-desktop"
         [navbarItems]="navbarItems"
         [isHeader]="isHeader"
+        [isMobile]="isMobileMenuShow"
       ></app-nav>
 
       <app-buttons-block class="buttons header-desktop"
@@ -23,7 +24,10 @@
       ></app-buttons-block>
 
       <div class="header-mobile">
-        <div class="menu-switch">
+        <div
+          (click)="mobileMenuClick()"
+          class="menu-switch"
+        >
           <svg height="30" width="30" aria-hidden="true" focusable="false">
             <rect height="2" width="30" x="0" y="6"></rect>
             <rect height="2" width="30" x="0" y="16"></rect>
@@ -31,5 +35,11 @@
           </svg>
         </div>
       </div>
+      <app-nav *ngIf="isMobileMenuShow"
+        class="mobile-menu"
+        [navbarItems]="navbarItems"
+        [isHeader]="isHeader"
+        [isMobile]="isMobileMenuShow"
+      ></app-nav>
     </div>
   </header>
