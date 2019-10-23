@@ -11,6 +11,7 @@ import { navbarRouterItems } from '../../constants';
 export class HeaderComponent {
   isHeader = true;
   isButtonsScroll = false;
+  isMobileMenuShow = false;
 
   markedItems: string [] = [
     'N26 You',
@@ -26,4 +27,6 @@ export class HeaderComponent {
   onWindowScroll() {
     this.isButtonsScroll = window.pageYOffset > 255;
   }
+
+  mobileMenuClick = () => this.isMobileMenuShow = !this.isMobileMenuShow;
 }

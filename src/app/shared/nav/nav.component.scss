@@ -1,16 +1,26 @@
 @import '../../../styles/utils';
 
-.nav {
+.green-mark {
+  position: relative;
 
+  &:before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    background-color: rgb(54, 161, 139);
+  }
+}
+
+.nav {
   @include for-desktop {
     margin: {
       left: 16px;
       right: 16px;
     };
-  }
-
-  &-header {
-
   }
 
   &-footer {
@@ -45,22 +55,31 @@
       margin: 10px 0 10px 0;
     }
   }
-}
 
+  &-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
 
+    .nav-item {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px $border-color solid;
+    }
 
-.green-mark {
-  position: relative;
+    .green-mark {
+      position: relative;
 
-  &:before {
-    content: '';
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    position: absolute;
-    right: -6px;
-    top: -6px;
-    background-color: rgb(54, 161, 139);
-
+      &:before {
+        height: 9px;
+        width: 9px;
+        position: absolute;
+        right: 35%;
+        top: 12px;
+      }
+    }
   }
 }
