@@ -24,7 +24,11 @@ body {
   dispLay: block;
   min-height: 100vh;
   padding-bottom: 90px;
-  padding-top: 70px;
+
+  padding-top: 60px;
+  @include for-desktop {
+    padding-top: 70px;
+  }
 }
 
 h1,
