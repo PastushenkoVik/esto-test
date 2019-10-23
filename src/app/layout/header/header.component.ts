@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 import { navbarRouterItems } from '../../constants';
 
@@ -10,6 +10,7 @@ import { navbarRouterItems } from '../../constants';
 
 export class HeaderComponent {
   isHeader = true;
+  isButtonsScroll = false;
 
   markedItems: string [] = [
     'N26 You',
@@ -20,4 +21,9 @@ export class HeaderComponent {
     label: item.label,
     isMarked: this.markedItems.find(marckLabel => marckLabel === item.label),
   }));
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isButtonsScroll = window.pageYOffset > 155;
+  }
 }

@@ -1,6 +1,5 @@
-<div class="container">
-  <div class="content">
-    <header class="header" role="banner">
+  <header class="header" role="banner">
+    <div class="header-content">
       <div class="logo">
         <a href="" title="N26">
           <svg viewBox="0 0 1200 819.91"
@@ -19,6 +18,9 @@
         [isHeader]="isHeader"
       ></app-nav>
 
-    </header>
-  </div>
-</div>
+      <app-buttons-block
+        [ngClass]="{'buttons-scroll': isButtonsScroll}"
+        class="buttons"
+      ></app-buttons-block>
+    </div>
+  </header>
