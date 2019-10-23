@@ -20,7 +20,7 @@ import { YouBankAccountComponent } from './pages/you-bank-account/you-bank-accou
 import { ContentSectionComponent } from './shared/content-section/content-section.component';
 import { OptionsListComponent } from './components/options-list/options-list.component';
 import { OptionItemComponent } from './components/options-list/option-item/option-item.component';
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonComponent } from './shared/button/button.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardsSelectComponent } from './components/cards-select/cards-select.component';
 import { CardsSliderComponent } from './components/cards-select/cards-slider/cards-slider.component';

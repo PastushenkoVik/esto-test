@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IContentSection, IOptionListItem, IOptionsListRuler } from '../../interfaces';
-import {PlansBusinessComponent} from '../plans-business/plans-business.component';
+import {IContentSection, IOptionListItem} from '../../interfaces';
 
 @Component({
   selector: 'app-plans',
@@ -34,6 +33,16 @@ export class PlansComponent implements OnInit {
           dotColor: {'background-color': 'rgb(38, 102, 120)'},
         },
       ],
+      optionsListRules: {
+        planCost: 0,
+        isOptionDisable: [
+          'typeWithdrawal',
+          'typeInsurance',
+          'typeDiscount',
+          'typeAccess',
+          'typeSupport',
+        ],
+      },
     },
     {
       title: 'N26 You',
@@ -68,6 +77,13 @@ export class PlansComponent implements OnInit {
           dotColor: {'background-color': 'rgb(116, 116, 116)'},
         },
       ],
+      optionsListRules: {
+        planCost: 9.90,
+        isOptionDisable: [
+          'typeAccess',
+          'typeSupport',
+        ],
+      },
     },
     {
       title: 'N26 Metal',
@@ -92,8 +108,13 @@ export class PlansComponent implements OnInit {
           dotColor: {'background-color': 'rgb(138, 138, 140)'},
         },
       ],
+      optionsListRules: {
+        planCost: 16.90,
+        isOptionDisable: [],
+      },
     },
   ];
+
   optionsList: IOptionListItem [] = [
     {
       isDisable: false,
@@ -138,30 +159,6 @@ export class PlansComponent implements OnInit {
     },
     {
       title: '',
-    }
-  ];
-
-  optionsListRules: IOptionsListRuler [] = [
-    {
-      planCost: 0,
-      isOptionDisable: [
-        'typeWithdrawal',
-        'typeInsurance',
-        'typeDiscount',
-        'typeAccess',
-        'typeSupport',
-      ],
-    },
-    {
-      planCost: 9.90,
-      isOptionDisable: [
-        'typeAccess',
-        'typeSupport',
-      ],
-    },
-    {
-      planCost: 16.90,
-      isOptionDisable: [],
     },
   ];
 

@@ -2,8 +2,17 @@
 
 .cards {
   &-wrapper {
-    max-width: $card-select-max-width;
-    padding: 30px;
+    background-color: $section-bc-gray;
+    @include for-tablet {
+      background-color: transparent;
+    }
+
+    padding: 30px 0;
+    @include for-tablet {
+      max-width: $card-select-max-width;
+      min-width: $card-select-max-width;
+      padding: 30px;
+    }
     text-align: center;
   }
 
@@ -16,5 +25,18 @@
     letter-spacing: -0.4px;
     line-height: 29px;
     margin-bottom: 28px;
+  }
+}
+
+.wrapper-gray {
+
+  @include for-tablet {
+    display: block;
+    height: 450px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
   }
 }

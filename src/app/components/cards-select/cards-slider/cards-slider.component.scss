@@ -1,20 +1,29 @@
 @import "../../../../styles/utils";
 
 .slider {
+  overflow: hidden;
   &-wrapper {
-    margin-bottom: 20px;
+    margin: 0 $gutter 20px $gutter;
+    @include for-tablet {
+      margin: 0 0 20px 0;
+    }
   }
   &-viewer {
-    width: 100%;
+    //min-width: 100%;
     padding-bottom: 10px;
   }
 
   &-shadow {
-    position: relative;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     overflow: hidden;
-    border-radius: 4px;
     box-shadow: rgb(116, 116, 116) 0px 45px 65px -40px;
+    border-radius: 15px;
+    margin: 0 10px;
+    @include for-tablet {
+      margin: 0;
+    }
   }
 
   &-dotter {
@@ -25,15 +34,8 @@
   }
 
   &-img {
-    width: 100%;
-    left: 100%;
-    @include transition($hover-duration, 'left');
-
-    &--visible {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+    min-width: 100%;
+    @include transition($hover-duration, 'transform');
+    border-radius: 4px;
   }
 }
-

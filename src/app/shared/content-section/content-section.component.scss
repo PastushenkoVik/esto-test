@@ -1,12 +1,21 @@
+@import "../../../styles/utils";
+
 .content-wrapper {
-  padding: 30px 10px;
+  padding: 0 0 30px 0;
+  @include for-tablet {
+    padding: 30px 10px;
+  }
 }
 
 .section {
-  padding: 40px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+
+  padding: 40px 0;
+  @include for-tablet {
+    padding: 40px 20px;
+  }
   flex-direction: column;
 
   &-title {
@@ -15,6 +24,8 @@
 
   &-content {
     padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
   }
 
   &-title-text {

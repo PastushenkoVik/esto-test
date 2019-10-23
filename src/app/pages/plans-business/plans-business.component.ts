@@ -8,7 +8,7 @@ import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfa
 })
 
 export class PlansBusinessComponent {
-  tabsList = [
+  tabsAccountPlans = [
     {
       label: 'Personal',
       path: '/plans',
@@ -18,7 +18,6 @@ export class PlansBusinessComponent {
       path: '/plans-business',
     },
   ];
-
   plans = [
     {
       title: 'N26 Business',
@@ -34,6 +33,16 @@ export class PlansBusinessComponent {
           dotColor: {'background-color': 'rgb(38, 102, 120)'},
         },
       ],
+      optionsListRules: {
+        planCost: 0,
+        isOptionDisable: [
+          'typeWithdrawal',
+          'typeInsurance',
+          'typeDiscount',
+          'typeAccess',
+          'typeSupport',
+        ],
+      },
     },
     {
       title: 'N26 Business You',
@@ -68,6 +77,13 @@ export class PlansBusinessComponent {
           dotColor: {'background-color': 'rgb(116, 116, 116)'},
         },
       ],
+      optionsListRules: {
+        planCost: 9.90,
+        isOptionDisable: [
+          'typeAccess',
+          'typeSupport',
+        ],
+      },
     },
   ];
 
@@ -101,25 +117,5 @@ export class PlansBusinessComponent {
     {
       title: '',
     }
-  ];
-
-  optionsListRules: IOptionsListRuler [] = [
-    {
-      planCost: 0,
-      isOptionDisable: [
-        'typeWithdrawal',
-        'typeInsurance',
-        'typeDiscount',
-        'typeAccess',
-        'typeSupport',
-      ],
-    },
-    {
-      planCost: 9.90,
-      isOptionDisable: [
-        'typeAccess',
-        'typeSupport',
-      ],
-    },
   ];
 }

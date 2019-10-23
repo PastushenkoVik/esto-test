@@ -2,10 +2,8 @@
   <div class="slider-viewer">
     <div class="slider-shadow">
       <img
+        [ngStyle]="shiftClass"
         class="slider-img"
-        [ngClass]="{
-          'slider-img--visible': !cardImg.isDisabled && (i === cardSlider.activeDot)
-        }"
         *ngFor="let cardImg of cardSlider; let i = index"
           [src]="cardImg.img"
           [alt]="cardImg.alt"

@@ -1,7 +1,10 @@
 @import '../../../styles/utils';
 
 .header {
-  padding: 0 $desctop-header-padding;
+  padding: 0 10px;
+  @include for-tablet {
+    padding: 0 $desctop-header-padding;
+  }
   background-color: rgba(255, 255, 255, 0.98);
   z-index: 9999;
   position: fixed;
@@ -13,13 +16,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-    max-width: $desktop-max-width;
-    margin: 0 auto;
 
     height: 60px;
     @include for-desktop {
+      flex-wrap: nowrap;
       height: 70px;
+    }
+
+    overflow: hidden;
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+  }
+
+
+  @include for-phone {
+    .header-desctop {
+      display: none;
+    }
+  }
+  @include for-desktop {
+    .header-mobile {
+      display: none;
     }
   }
 }
@@ -46,8 +63,10 @@ img {
   margin: 0 16px;
 }
 
-.spacer {
-  flex: 1;
+@include for-tablet {
+  .spacer {
+    flex: 1;
+  }
 }
 
 .buttons {
@@ -61,5 +80,14 @@ img {
 
   &-scroll {
     top: -100%;
+  }
+}
+
+.menu-switch {
+
+  svg {
+    rect {
+      fill: $body-color;
+    }
   }
 }

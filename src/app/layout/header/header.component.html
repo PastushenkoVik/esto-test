@@ -13,14 +13,26 @@
 
       <div class="spacer"></div>
 
-      <app-nav
-        [navbarItems]="navbarItems"
-        [isHeader]="isHeader"
-      ></app-nav>
+      <div class="header-desctop">
+        <app-nav
+          [navbarItems]="navbarItems"
+          [isHeader]="isHeader"
+        ></app-nav>
 
-      <app-buttons-block
-        [ngClass]="{'buttons-scroll': isButtonsScroll}"
-        class="buttons"
-      ></app-buttons-block>
+        <app-buttons-block
+          [ngClass]="{'buttons-scroll': isButtonsScroll}"
+          class="buttons"
+        ></app-buttons-block>
+      </div>
+
+      <div class="header-mobile">
+        <div class="menu-switch">
+          <svg height="30" width="30" aria-hidden="true" focusable="false">
+            <rect height="2" width="30" x="0" y="6"></rect>
+            <rect height="2" width="30" x="0" y="16"></rect>
+            <rect height="2" width="30" x="0" y="26"></rect>
+          </svg>
+        </div>
+      </div>
     </div>
   </header>

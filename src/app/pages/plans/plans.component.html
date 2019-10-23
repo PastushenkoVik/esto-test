@@ -1,24 +1,21 @@
 <section class="section--gray">
   <app-content-section [section]="sections[0]">
-    <app-tabs-link [tabsAccountPlans]="tabsAccountPlans"></app-tabs-link>
-    <div class="flex-wrapper">
-      <app-cards-select
-        *ngFor="let cardSelect of plans"
-          [cardSelect]="cardSelect"
-      ></app-cards-select>
-    </div>
+    <app-tabs-link class="tabs" [tabsAccountPlans]="tabsAccountPlans"></app-tabs-link>
   </app-content-section>
 </section>
 
-<section>
+<section class="section--content">
   <app-content-section [section]="sections[1]">
-    <div class="option-lists">
-      <div *ngFor="let listRuler of optionsListRules" >
-        <app-options-list
-          [optionsList]="optionsList"
-          [listRuler]="listRuler"
-        ></app-options-list>
-      </div>
+    <div class="flex-wrapper">
+      <app-cards-select class="mobile-wrapper"
+        *ngFor="let cardSelect of plans"
+          [cardSelect]="cardSelect"
+      >
+      <app-options-list
+        [optionsList]="optionsList"
+        [optionsListRulers]="cardSelect.optionsListRules"
+      ></app-options-list>
+      </app-cards-select>
     </div>
   </app-content-section>
 </section>

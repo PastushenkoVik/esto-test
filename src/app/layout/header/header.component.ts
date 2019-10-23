@@ -24,6 +24,6 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isButtonsScroll = window.pageYOffset > 155;
+    this.isButtonsScroll = window.pageYOffset > 255;
   }
 }
