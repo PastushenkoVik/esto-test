@@ -26,6 +26,9 @@
   &-footer {
     display: flex;
     flex-direction: column;
+    @include for-tablet {
+      flex-direction: row;
+    }
     justify-content: flex-start;
     align-content: flex-start;
   }
@@ -53,6 +56,9 @@
     &--footer {
       font-size: 13px;
       margin: 10px 0 10px 0;
+      @include for-tablet {
+        margin: 0 0 0 14px;
+      }
     }
   }
 
