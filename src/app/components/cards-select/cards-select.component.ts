@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardsSelectComponent implements OnInit {
   @Input() cardSelect;
 
+  buttonType = {isButtonGreen: true}
+
   constructor() { }
 
   ngOnInit() {
