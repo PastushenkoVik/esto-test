@@ -1,13 +1,14 @@
 <div class="wrapper-gray section--gray"></div>
 <div class="cards-wrapper">
   <h2 class="cards-title">{{cardSelect.title}}</h2>
-  <app-cards-slider [cardSlider]="cardSelect.cardSlider"></app-cards-slider>
-  <div>
-  <app-button
-    [text]="cardSelect.button.text"
-    [path]="cardSelect.button.path"
-    [buttonType]="buttonType"
-  ></app-button>
+
+  <div class="cards-content">
+    <app-cards-slider [cardSlider]="cardSelect.cardSlider"></app-cards-slider>
+    <app-button
+      [text]="cardSelect.button.text"
+      [path]="cardSelect.button.path"
+      [buttonType]="buttonType"
+    ></app-button>
   </div>
 </div>
 <ng-content></ng-content>

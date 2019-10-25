@@ -9,7 +9,7 @@
       background-color: transparent;
     }
 
-    padding: 30px 0;
+    padding: 20px 0 0;
     @include for-tablet {
       max-width: $card-select-max-width;
       min-width: $card-select-max-width;
@@ -28,6 +28,14 @@
     line-height: 29px;
     margin-bottom: 28px;
   }
+
+  &-content {
+    @include for-phone {
+      background-color: #fff;
+      margin: 0 58px;
+      padding: 30px 10px 20px 10px;
+    }
+  }
 }
 
 .wrapper-gray {
@@ -42,3 +50,8 @@
     z-index: -1;
   }
 }
+
+.section--gray {
+  background-color: $section-bc-gray;
+}
+

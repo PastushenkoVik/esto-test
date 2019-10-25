@@ -1,5 +1,6 @@
 export interface IContentSection {
   title: string;
+  isGray?: boolean;
 }
 
 export interface IOptionListItem {

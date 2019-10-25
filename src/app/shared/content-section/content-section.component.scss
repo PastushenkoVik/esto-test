@@ -1,9 +1,23 @@
 @import "../../../styles/utils";
 
+@include for-phone {
+  .container.section--gray {
+    background-color: $section-bc-gray;
+  }
+
+}
+
 .content-wrapper {
   padding: 0 0 30px 0;
   @include for-tablet {
+    position: relative;
     padding: 30px 10px;
+  }
+
+  @include for-tablet() {
+    &.section--gray {
+      background-color: $section-bc-gray;
+    }
   }
 }
 

@@ -8,16 +8,6 @@ import {IContentSection, IOptionListItem, IOptionsListRuler} from '../../interfa
 })
 
 export class PlansBusinessComponent {
-  tabsAccountPlans = [
-    {
-      label: 'Personal',
-      path: '/plans',
-    },
-    {
-      label: 'Business',
-      path: '/plans-business',
-    },
-  ];
   plans = [
     {
       title: 'N26 Business',
@@ -108,14 +98,5 @@ export class PlansBusinessComponent {
       typeInsurance: true,
       text: 'Allianz insurance package',
     },
-  ];
-
-  sections: IContentSection [] = [
-    {
-      title: 'Find a plan that works for you.',
-    },
-    {
-      title: '',
-    }
   ];
 }

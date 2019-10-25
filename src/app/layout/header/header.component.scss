@@ -1,7 +1,7 @@
 @import '../../../styles/utils';
 
 .header {
-  padding: 0 10px;
+  padding: 0 20px;
   background-color: #fff;
   @include for-tablet {
     padding: 0 $desctop-header-padding;
@@ -20,6 +20,7 @@
 
     height: 60px;
     @include for-desktop {
+      padding: 0 40px 0 20px;
       flex-wrap: nowrap;
       height: 70px;
     }

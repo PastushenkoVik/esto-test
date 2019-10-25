@@ -28,6 +28,7 @@ import { DotComponent } from './components/cards-select/cards-slider/dot/dot.com
 import { PlansBusinessComponent } from './pages/plans-business/plans-business.component';
 import { TabsLinkComponent } from './components/tabs-link/tabs-link.component';
 import { ButtonsBlockComponent } from './layout/header/buttons-block/buttons-block.component';
+import { PlanListComponent } from './components/plan-list/plan-list.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { ButtonsBlockComponent } from './layout/header/buttons-block/buttons-blo
     PlansBusinessComponent,
     TabsLinkComponent,
     ButtonsBlockComponent,
+    PlanListComponent,
   ],
   imports: [
     BrowserModule,

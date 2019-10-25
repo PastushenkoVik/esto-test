@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {IContentSection, IOptionListItem} from '../../interfaces';
 
 @Component({
@@ -6,7 +6,7 @@ import {IContentSection, IOptionListItem} from '../../interfaces';
   templateUrl: './plans.component.html',
   styleUrls: ['./plans.component.scss']
 })
-export class PlansComponent implements OnInit {
+export class PlansComponent {
   tabsAccountPlans = [
     {
       label: 'Personal',
@@ -156,12 +156,10 @@ export class PlansComponent implements OnInit {
   sections: IContentSection [] = [
     {
       title: 'Find a plan that works for you.',
+      isGray: true,
     },
     {
       title: '',
     },
   ];
-
-  ngOnInit(): void {
-  }
 }
