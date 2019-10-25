@@ -42,7 +42,6 @@ export const navbarRouterItems = [
     component: PlansComponent,
   },
 ];
-
 /**
  * Footer menu
  */
