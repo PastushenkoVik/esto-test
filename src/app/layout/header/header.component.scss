@@ -78,6 +78,14 @@ img {
   rect {
     fill: $body-color;
   }
+
+  .top-rect {
+    transform: rotate(45deg) translate(4px, -1px);
+  }
+  .bottom-rect {
+    transform-origin: left;
+    transform: rotate(-45deg) translate(-2px, -2px);
+  }
 }
 
 .header-desktop {

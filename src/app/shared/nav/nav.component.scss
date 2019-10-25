@@ -75,7 +75,9 @@
       text-align: center;
       border-top: 1px $border-color solid;
     }
-
+    .nav-item:last-of-type {
+      border-bottom: 1px $border-color solid;
+    }
     .green-mark {
       position: relative;
 

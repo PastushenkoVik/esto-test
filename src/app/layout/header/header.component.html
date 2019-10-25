@@ -28,10 +28,14 @@
           (click)="mobileMenuClick()"
           class="menu-switch"
         >
-          <svg height="30" width="30" aria-hidden="true" focusable="false">
-            <rect height="2" width="30" x="0" y="6"></rect>
-            <rect height="2" width="30" x="0" y="16"></rect>
-            <rect height="2" width="30" x="0" y="26"></rect>
+          <svg height="40" width="30" aria-hidden="true" focusable="false">
+            <rect [ngClass]="{'top-rect': isMobileMenuShow}"
+                  height="2" width="30" x="0" y="2"></rect>
+            <rect *ngIf="!isMobileMenuShow"
+                  height="2" width="30" x="0" y="14"
+            ></rect>
+            <rect  [ngClass]="{'bottom-rect': isMobileMenuShow}"
+                   height="2" width="30" x="0" y="26"></rect>
           </svg>
         </div>
       </div>
