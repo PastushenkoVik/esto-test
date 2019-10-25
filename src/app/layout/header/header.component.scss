@@ -80,12 +80,22 @@ img {
     @include transition($menu-hover-duration, 'transform');
   }
 
+  .top-rect,
+  .bottom-rect {
+    transition-timing-function: cubic-bezier(0.8, 0, 0.5, 2);
+  }
+
+  svg {
+    outline: none;
+  }
+
   .top-rect {
-    transform: rotate(45deg) translate(4px, -1px);
+    transform-origin: top left;
+    transform: rotate(45deg) scaleX(1.18);
   }
   .bottom-rect {
-    transform-origin: left;
-    transform: rotate(-45deg) translate(-2px, -2px);
+    transform-origin: bottom left;
+    transform: rotate(-45deg) scaleX(1.1);
   }
 }
 
@@ -111,4 +121,20 @@ img {
   margin-top: 50px;
   padding: $gutter 0;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+
+  &--bottom {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 49px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    text-align: center;
+  }
 }

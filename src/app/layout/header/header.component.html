@@ -28,7 +28,7 @@
           (click)="mobileMenuClick()"
           class="menu-switch"
         >
-          <svg height="40" width="30" aria-hidden="true" focusable="false">
+          <svg height="28" width="30" aria-hidden="true" focusable="false">
             <rect [ngClass]="{'top-rect': isMobileMenuShow}"
                   height="2" width="30" x="0" y="2"></rect>
             <rect *ngIf="!isMobileMenuShow"
@@ -39,11 +39,25 @@
           </svg>
         </div>
       </div>
-      <app-nav *ngIf="isMobileMenuShow"
-        class="mobile-menu"
-        [navbarItems]="navbarItems"
-        [isHeader]="isHeader"
-        [isMobile]="isMobileMenuShow"
-      ></app-nav>
+      <div class="mobile-menu" *ngIf="isMobileMenuShow">
+        <app-nav
+          [navbarItems]="navbarItems"
+          [isHeader]="isHeader"
+          [isMobile]="isMobileMenuShow"
+        ></app-nav>
+
+        <app-button class="mobile-menu__button"
+          [text]="buttonOpenAccount.text"
+          [path]="buttonOpenAccount.path"
+          [buttonType]="buttonOpenAccount.buttonType"
+        ></app-button>
+
+        <app-nav
+          class="mobile-menu--bottom"
+          [navbarItems]="onlineBanking"
+          [isHeader]="isHeader"
+          [isMobile]="isMobileMenuShow">
+        </app-nav>
+      </div>
     </div>
   </header>

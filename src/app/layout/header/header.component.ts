@@ -1,6 +1,8 @@
 import {Component, HostListener} from '@angular/core';
 
 import { navbarRouterItems } from '../../constants';
+import {LegalDocumentsComponent} from '../../pages/legal-documents/legal-documents.component';
+import {HomeComponent} from '../../pages/home/home.component';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +24,20 @@ export class HeaderComponent {
     label: item.label,
     isMarked: this.markedItems.find(marckLabel => marckLabel === item.label),
   }));
+
+  onlineBanking = [
+    {
+      path: '',
+      label: 'Online Banking',
+      component: HomeComponent,
+    },
+  ];
+
+  buttonOpenAccount = {
+    text: 'Open Account',
+    path: '',
+    buttonType: {isButtonGreen: true},
+  };
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
